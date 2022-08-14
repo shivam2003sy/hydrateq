@@ -4,6 +4,7 @@ import  Dropzone  from "../components/Dropzone.js";
 import cuid from "cuid";
 import ImageList from "../components/Imagelist";
 import ButtonSelectGraph from "../components/ButtonSelectGraph";
+import Gaurav from "../components/Gaurav";
 const Prafull = () => {
     const [images, setImages] = useState([]);
     
@@ -51,6 +52,7 @@ const Prafull = () => {
         <Dropzone onDrop={onDrop}  accept={"text/csv , application/pdf , image/*"} /></div>
 
         <div className="btn-generate">Generate</div>
+        <Gaurav/>
       </div>
       <div className="select-graph">
           <br />
