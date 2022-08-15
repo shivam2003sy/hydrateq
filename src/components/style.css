@@ -7,8 +7,13 @@
     text-align: center;
     width: 30%;
 }
+.btn:hover{
+    background-color: lightgreen;
+
+}
 .btndiv{
     font-size: 0.8rem;
+    cursor: pointer;
 }
 .btn-generate{
     padding: 1rem 0.4rem;
@@ -18,4 +23,5 @@
     font-size: 1rem;
     text-align: center;
     width: 30%;
+    cursor: pointer;
 }

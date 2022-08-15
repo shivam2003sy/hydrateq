@@ -11,11 +11,13 @@ import { Home } from "./screens/Home";
 import ProjectScreen from "./screens/ProjectScreen";
 import NotFound from "./screens/NotFound";
 import Prafull from "./screens/Prafull";
+import Sushant from "./screens/Sushant";
 function App() {
   return (
     <div>
       <Routes>
-        <Route exact path="/" element={<Prafull/>}/>
+        <Route exact path="/" element={<Sushant/>}/>
+        <Route exact path="/projects" element={ <Prafull />}/>
         <Route  path="/project/:id" element={ <ProjectScreen/>} />
         <Route path="*" element={<NotFound/>}/>
         </Routes>

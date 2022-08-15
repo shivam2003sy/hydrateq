@@ -3,7 +3,8 @@ import "./style.css"
 const ButtonSelectGraph = (props) => {
     let name = props.name_of_graph
   return (
-    <div className='btn'>{name}</div>
+    <btn className='btn'>{name}</btn>
+
   )
 }
 

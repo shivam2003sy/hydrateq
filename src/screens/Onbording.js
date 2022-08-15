@@ -24,7 +24,7 @@ export const Onbording = () => {
             minHeight="100vh"
             bgcolor="#d2e2d8"
         >
-        <Projects project={pro} handleAddProject={handleAddProject}/>
+        <Projects project={pro} handleAddProject={handleAddProject} />
         </Box>
     )
 }

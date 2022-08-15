@@ -8,6 +8,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import ProjectScreen from "../screens/ProjectScreen";
 import DialogTitle from '@mui/material/DialogTitle';
+import "../screens/prafull.css";
 import CreateNewFolderIcon from '@mui/icons-material/CreateNewFolder';
 const Projects = (props) => {
   const [name, setName] = React.useState( "");
@@ -41,6 +42,20 @@ const Projects = (props) => {
     }
   return (
     <Stack>
+      <Stack>
+         <div className="bttn">
+         <Card sx={{ minWidth: 275 ,minHeight:40 }} style={{backgroundColor: "white"}}  className="new-pro " >
+            <CardActionArea onClick={handleOnclick}>
+              <Stack direction='row' spacing={1} alignItems="center" justifyContent="center" px={2} py={2}>
+              <CreateNewFolderIcon />
+              <p className="new-pro">New Project</p>
+                </Stack>
+                </CardActionArea>
+            </Card>
+         </div>
+            
+          </Stack>
+          <h3 id="heading">Previous Projects</h3>
     <Stack>
       {props.project.map((project, index) => (
           <Stack my={1} py={1} key={index}>
@@ -51,16 +66,7 @@ const Projects = (props) => {
             </Card>
           </Stack>
       ))}
-       <Stack>
-            <Card sx={{ minWidth: 275 ,minHeight:40 }} style={{backgroundColor: "white"}}>
-            <CardActionArea onClick={handleOnclick}>
-              <Stack direction='row' spacing={1} alignItems="center" justifyContent="center" px={2} py={2}>
-              <CreateNewFolderIcon />
-              <p>new Project</p>
-                </Stack>
-                </CardActionArea>
-            </Card>
-          </Stack>
+       
     </Stack>
     <Dialog open={open} onClose={handleClose}>
         <DialogTitle>New Project</DialogTitle>
@@ -87,7 +93,7 @@ const Projects = (props) => {
           />
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Cancel</Button>
+          <Button onClick={handleClose} >Cancel</Button>
           <Button onClick={handleCreate}>Create</Button>
         </DialogActions>
       </Dialog>
