@@ -19,7 +19,7 @@ function App() {
         <Route exact path="/" element={<Sushant/>}/>
         <Route exact path="/projects" element={ <Prafull />}/>
         <Route  path="/project/:id" element={ <ProjectScreen/>} />
-        <Route path="/analysis/:id" element={<Analysis/>}/>
+        {/* <Route path="/analysis/:id" element={<Analysis/>}/> */}
         <Route path="*" element={<NotFound/>}/>
         </Routes>
     </div>
