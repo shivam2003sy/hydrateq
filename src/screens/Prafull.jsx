@@ -51,15 +51,28 @@ const Prafull = () => {
       {/* Sidebar */}
       <Sidebars/>
       {/* Dropzone */}
+      <div className="main-container">
       <div className="dropzone-area  mt-5">
        <div className="dropzone-d"> 
        
         <Dropzone onDrop={onDrop}  accept={"text/csv , application/pdf , image/*"} /></div>
 
         <div className="btn-generate">Generate</div>
-        <Gaurav/>
       </div>
-      <div className="select-graph">
+      {/* <div className="dropzone-area  mt-5">
+       <div className="dropzone-d"> 
+       
+        <Dropzone onDrop={onDrop}  accept={"text/csv , application/pdf , image/*"} /></div>
+
+        <div className="btn-generate">Generate</div> */}
+
+
+        {/* Spread Sheet Input  */}
+        <Gaurav/>
+
+
+      </div>
+      {/* <div className="select-graph">
           <br />
           <br />
           <h5>Select The Graph to be Selected</h5>
@@ -78,7 +91,7 @@ const Prafull = () => {
           <ButtonSelectGraph name_of_graph={"Swalo Diagram"} onClick = {()=>GraphSelection}/>
           <ButtonSelectGraph name_of_graph={"Djader Diagram"} onClick = {()=>GraphSelection}/>
           <br />
-      </div>
+      </div> */}
         {/* <ImageList images={images} />   */}
      
     </div>

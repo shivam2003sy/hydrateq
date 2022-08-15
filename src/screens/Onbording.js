@@ -14,14 +14,14 @@ export const Onbording = () => {
    
     
     return (
-        <Box
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            minHeight="100vh"
-            bgcolor="#12ADC1"
-        >
+        // <Box
+        //     display="flex"
+        //     justifyContent="center"
+        //     alignItems="center"
+        //     minHeight="100vh"
+        //     bgcolor="#12ADC1"
+        // >
         <Projects project={pro}  />
-        </Box>
+        // </Box>
     )
 }

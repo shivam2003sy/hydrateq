@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import DialogTitle from '@mui/material/DialogTitle';
 import "../screens/prafull.css";
 import CreateNewFolderIcon from '@mui/icons-material/CreateNewFolder';
+// const [open, setOpen] = React.useState(false);
 const Projects = (props) => {
   const [newProject, setNewProject] = React.useState(null)
   useEffect(() => {
@@ -51,10 +52,20 @@ const Projects = (props) => {
   }
 
   return (
-    <Stack>
-      <Stack>
-         <div className="bttn">
-         <Card sx={{ minWidth: 275 ,minHeight:40 }} style={{backgroundColor: "white"}}  className="new-pro " >
+    <Stack style={{backgroundColor: "#BEE3F9"}} >
+     
+         {/* <div className="bttn stack-new-pro">
+         <Card className="stack-new-pro new-pro" sx={{ minWidth: 275 ,minHeight:40 }} style={{backgroundColor: "#BEE3F9"}} >
+            <CardActionArea onClick={handleOnclick}>
+              <Stack direction='row' spacing={1} alignItems="center" justifyContent="center" px={2} py={2}>
+              <CreateNewFolderIcon />
+              <p className="new-pro">New Project</p>
+                </Stack>
+                </CardActionArea>
+            </Card>
+         </div> */}
+         <div className="bttn stack-new-pro" style={{backgroundColor: "#BEE3F9"}}>
+         <Card className="stack-new-pro new-pro" sx={{ minWidth: 275 ,minHeight:40 }} style={{backgroundColor: "#BEE3F9"}} >
             <CardActionArea onClick={handleOnclick}>
               <Stack direction='row' spacing={1} alignItems="center" justifyContent="center" px={2} py={2}>
               <CreateNewFolderIcon />
@@ -63,15 +74,19 @@ const Projects = (props) => {
                 </CardActionArea>
             </Card>
          </div>
-            
-          </Stack>
-          <h3 id="heading">Previous Projects</h3>
-    <Stack>
+            <div className="heading">
+              <h3 id="heading">Previous Projects</h3>
+            </div>
+          {/* <br/> <br/> */}
+         
+       
+    <Stack direction="row" className="prev-pro" style={{ backgroundColor: "white" }}>
+   
       {props.project.map((project, index) => (
-          <Stack my={1} py={1} key={index}>
-            <Card sx={{ minWidth: 275, minHeight: 40 }} style={{ backgroundColor: "white" }}>
+          <Stack my={1} mx={2} py={1} key={index} direction="row" >
+            <Card sx={{ minWidth: 200, minHeight: 40 }} style={{ backgroundColor: "#BEE3F9 " }}>
               <CardActionArea onClick={() => handleRoute(project[0])}>
-                <Stack pt={1} alignItems="center"  ><Typography variant="subtitle1">Project name : {project[1]}</Typography></Stack>
+                <Stack pt={1} alignItems="center"  ><Typography variant="subtitle1">{project[1]}</Typography></Stack>
               </CardActionArea>
             </Card>
           </Stack>
