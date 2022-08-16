@@ -1,15 +1,15 @@
 import React from 'react'
-
+import "../screens/prafull.css"
 const Sidebars = () => {
   return (
     <div className="container-side">
         <div className="logo side">
-          <img
+          {/* <img
             src="https://tse3.mm.bing.net/th?id=OIP.lCLulmLSKngZC3wJ3aLR2wHaF7&pid=Api&P=0"
             alt="set"
             className="logo"
-          />
-          <b>Hydrateq</b>
+          /> */}
+         <h3><b>Hydrateq</b></h3> 
         </div>
         <br />
         <br />
