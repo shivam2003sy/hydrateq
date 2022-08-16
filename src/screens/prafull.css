@@ -2,9 +2,10 @@
     font-family: 'Raleway', sans-serif;
     font-family: 'Bangers';
     font-family: 'Edu NSW ACT Foundation';
+    /* background: rgba(128, 128, 128, 0.219); */
 }
 .container-side{
-    background-color: rgba(128, 128, 128, 0.061);
+    background-color: rgba(128, 128, 128, 0.219);
     min-width: 12rem;
     max-width: 12rem;
     min-height: 40rem;
@@ -79,14 +80,24 @@
     /* margin-left: ; */
     
 }
+.stack-new-pro{
+    border-color: #BEE3F9 ;
+    border-radius: 1rem;
+    padding-bottom: 2rem;
+    box-shadow: none;
+    box-shadow: 0cm;
+}
 .new-pro{
   
     background: #4681F4;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    border-radius: 1.5rem;
+    font-size: 1.4rem;
+    padding: 1rem 8rem;
 
-    color: white;
-    border-radius: 1rem;
-    font-size: 1.2rem;
-    padding: 0.6rem 8rem;
+    /* padding-bottom: 0; */
+
 }
 .bttn{
     margin:0 auto;
@@ -98,26 +109,32 @@ project-list {
    display: inline-flex;
 }
 #heading{
+    padding-top: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
     text-align: center;
 }
-.stack-new-pro{
-    border-color: #BEE3F9 ;
-    border-radius: 1rem;
-    box-shadow: none;
-}
+
 .prev-pro{
     background-color: white;
     width: 100%;
     padding-bottom: 3rem;
+    margin: auto;
 }
 .heading{
-    background-color: white;
+    /* background-color: rgb(128, 128, 128); */
     width: 100%;
-    bottom: 0;
+    font-family: serif;
+   
+    /* background-color: rgba(128, 128, 128, 0.219); */
 }
 
 .project-section{
     background-color: white;
     bottom: 0;
    
+}
+.last{
+    height: 100%;
+    min-height: 16rem;
 }
