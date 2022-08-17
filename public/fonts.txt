@@ -1,0 +1,9 @@
+font-family: 'Aboreto', cursive;
+font-family: 'Bangers', cursive;
+font-family: 'Barlow', sans-serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-family: 'Edu VIC WA NT Beginner', cursive;
+font-family: 'Koulen', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;

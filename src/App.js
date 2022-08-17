@@ -12,12 +12,16 @@ import ProjectScreen from "./screens/ProjectScreen";
 import NotFound from "./screens/NotFound";
 import Prafull from "./screens/Prafull";
 import Sushant from "./screens/Sushant";
+import Help from "./screens/Help";
 function App() {
   return (
     <div>
       <Routes>
         <Route exact path="/" element={<Sushant/>}/>
-        <Route exact path="/projects" element={ <Prafull />}/>
+        <Route exact path="/dashboard" element={ <Sushant />}/>
+        <Route exact path="/project" element={ <Prafull />}/>
+
+        <Route exact path="/help" element={ <Help />}/>
         <Route  path="/project/:id" element={ <ProjectScreen/>} />
         {/* <Route path="/analysis/:id" element={<Analysis/>}/> */}
         <Route path="*" element={<NotFound/>}/>

@@ -1,8 +1,10 @@
 *{
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Bangers';
-    font-family: 'Edu NSW ACT Foundation';
+    font-family:  sans-serif;
+    /* font-family: 'Bangers'; */
+    /* font-family: 'Edu NSW ACT Fonundatio'; */
     /* background: rgba(128, 128, 128, 0.219); */
+    scroll-behavior: auto;
+    scroll-margin-bottom: unset;
 }
 .container-side{
     background-color: rgba(128, 128, 128, 0.219);
@@ -10,7 +12,7 @@
     max-width: 12rem;
     min-height: 40rem;
     height: 100%;
-    font-family: 'Raleway', sans-serif;
+    font-family: sans-serif;
 }
 .cont{
     /* align-items: top; */
@@ -27,26 +29,42 @@
     margin: 1rem 0.5rem;
     text-align: center;
     padding: 0.2rem 0;
-    font-family: 'Edu NSW ACT Foundation';
+    font-family: sans-serif;
+    cursor: pointer;
+
+}
+.side :hover{
+    background-color: black;
+    color: white;
+}
+.drop-area{
+    background-color: black;
 }
 .dropzone-area{
   
-    background-color: white;
+    background-color: #BEE3F9;
     width: 65%;
-    top: 0;
+    margin: 0 auto;
+    
 }
 .dropzone-d{
     /* padding: 2rem ; */
     width: 30%;
     margin: 0rem auto;
-    border: 2px dashed black;
+    /* border: 2px dashed black; */
+    border-radius: 5px;
+}
+.inp-browse{
+    background-color: #4681F4;
 }
 .icon{
     width: 8%;
+    border-radius: 50%;
 }
 .logo{
     width: 100%;
-    font-family: 'Raleway', sans-serif;
+    font-family:'Aboreto', sans-serif;
+     font-size: 1.2rem;
     /* align-items: center;
     align-self: center;
     margin: auto ;
@@ -110,8 +128,9 @@ project-list {
 }
 #heading{
     padding-top: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 100;
+    font-family:  sans-serif;
+    font-weight: 50;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -138,3 +157,53 @@ project-list {
     height: 100%;
     min-height: 16rem;
 }
+
+
+/* Browse Button FIle Input Customization */
+label.label input[type="file"] {
+    position: absolute;
+    top: -1000px;
+  }
+  .label {
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: auto auto;
+    /* margin-left: 18.5rem; */
+    background: #4681F4;
+    display: inline-block;
+  }
+  .label:hover {
+    background: #5cbd95;
+  }
+  .label:active {
+    background: #4681F4;
+  }
+  .label:invalid+span {
+    color: #4681F4;
+  }
+  .label:valid+span {
+    color: #4681F4;
+  }
+  .btn-generate{
+      border-radius: 2rem;
+      background-color:#4681F4;
+  }
+  .select-file{
+    width: 100%;  
+   
+
+  }
+ 
+  .sample-add{
+      width: 7rem;
+      margin: 0 auto;
+      cursor: pointer;
+      border-radius: 1rem;
+
+      /* margin: auto; */
+  }
+  .sample-add :hover{
+      background-color: #5cbd95;
+  }

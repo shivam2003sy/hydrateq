@@ -1,7 +1,13 @@
 import React from 'react'
 import "../screens/prafull.css"
+import { useNavigate } from "react-router-dom";
 const Sidebars = () => {
+  let navigate = useNavigate();
+  const navigat =(prafull)=>{
+    navigate(`/${prafull}`);
+  }
   return (
+
     <div className="container-side">
         <div className="logo side">
           {/* <img
@@ -9,15 +15,16 @@ const Sidebars = () => {
             alt="set"
             className="logo"
           /> */}
-         <h3><b>Hydrateq</b></h3> 
+         <h3 ><b className='logo'>HYDRATEQ</b></h3> 
         </div>
         <br />
         <br />
         <br />
-        <div className="projects side">Projects</div>
-        <div className="projects side">DashBoard</div>
+      
+        <div className="projects side" onClick={ ()=>navigat("project")}>Project</div>
+        <div className="projects side" onClick={ ()=>navigat("dashboard")}>DashBoard</div>
         <hr />
-        <div className="side">
+        <div className="side" >
           <img
             src="https://www.pikpng.com/pngl/m/82-827408_help-icon-png-play-button-icon-png-clipart.png"
             alt="set"
@@ -25,7 +32,7 @@ const Sidebars = () => {
           />{" "}
           Aqua
         </div>
-        <div className="side">
+        <div className="side" onClick={ ()=>navigat("help")}>
           <img
             src="https://www.pikpng.com/pngl/m/82-827408_help-icon-png-play-button-icon-png-clipart.png"
             alt="set"
