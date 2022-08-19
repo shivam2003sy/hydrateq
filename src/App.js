@@ -12,6 +12,7 @@ import ProjectScreen from "./screens/ProjectScreen";
 import NotFound from "./screens/NotFound";
 import Prafull from "./screens/Prafull";
 import Analysis from "./screens/Analysis";
+import Help from "./components/Help";
 function App() {
   return (
     <div>
@@ -21,6 +22,7 @@ function App() {
         <Route path="/analysis/:id" element={<Analysis/>}/>
         <Route path="/prafull" element={<Prafull/>}/>
         <Route path="*" element={<NotFound/>}/>
+        <Route path="/Help" element={<Help/>}/>
         </Routes>
     </div>
   )
