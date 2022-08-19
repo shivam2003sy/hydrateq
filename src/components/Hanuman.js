@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./Shakti.css";
 import pic from "./Photo/1.jpg";
 import logo from "./Photo/2.jpg";
