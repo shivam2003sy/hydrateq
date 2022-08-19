@@ -25,7 +25,7 @@
     "react-dom": "^17.0.1",
     "react-dropzone": "^14.2.2",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "4.0.1",
+    "react-scripts": "^5.0.1",
     "styled-components": "^5.3.5",
     "web-vitals": "^0.2.4"
   },
@@ -74,8 +74,8 @@
   "devDependencies": {
     "concurrently": "^5.3.0",
     "cross-env": "^7.0.3",
-    "electron": "^11.2.1",
-    "electron-builder": "^22.9.1",
+    "electron": "^20.0.3",
+    "electron-builder": "^5.5.0",
     "prettier": "^2.2.1",
     "wait-on": "^5.2.1"
   }

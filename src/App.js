@@ -12,6 +12,7 @@ import ProjectScreen from "./screens/ProjectScreen";
 import NotFound from "./screens/NotFound";
 import Prafull from "./screens/Prafull";
 import Analysis from "./screens/Analysis";
+import Hanuman from "./components/Hanuman";
 function App() {
   return (
     <div>
@@ -20,6 +21,8 @@ function App() {
         <Route  path="/project/:id" element={ <ProjectScreen/>} />
         <Route path="/analysis/:id" element={<Analysis/>}/>
         <Route path="/prafull" element={<Prafull/>}/>
+        <Route path="/Hanuman" element={<Hanuman/>}/>
+        
         <Route path="*" element={<NotFound/>}/>
         </Routes>
     </div>
